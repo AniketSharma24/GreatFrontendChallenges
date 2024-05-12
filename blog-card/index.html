@@ -16,6 +16,8 @@
       If you're not using Tailwind, you may delete the <script> -->
   <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!--For icon-->
+  <script src="https://unpkg.com/feather-icons"></script>
 
   <link rel="icon" href="img/favicon.ico" sizes="any" />
   <style>
@@ -23,25 +25,32 @@
   </style>
 </head>
 
-<body class="flex items-center justify-center w-screen p-4 bg-gradient-to-b from-gray-50 to-gray-300">
+<body class="w-screen p-4 bg-gradient-to-b from-gray-50 to-gray-300">
   <!-- Add your site or application content here -->
 
-  <article class="lg:w-96 sm:w-80 p-6 shadow-md bg-white rounded-lg">
-    <header class="flex items-center gap-4">
-      <img class="w-16" src="./img/profile-thumbnail.png" alt="Profile picture of Sarah Dole" />
-      <div class="flex flex-col">
-        <strong class="text-lg text-neutral-900">Sarah Dole</strong>
-        <span class="text-sm text-neutral-600">@sarahdole</span>
-      </div>
-    </header>
-    <div class="mt-6 text-base text-neutral-600">
+  <article class="mx-auto mt-[120px] w-[320px] shadow-md bg-white rounded-lg overflow-hidden">
+    <img src="./img/spacejoy-YqFz7UMm8qE-unsplash.jpg" alt="Picture of blog card" srcset="">
+    <div class="py-6 px-4 flex gap-3 flex-col">
+      <span
+        class="rounded-full text-base w-fit border-2 px-3 py-0.5 border-solid border-green-200 bg-green-50 text-green-700">Interior</span>
       <p>
-        I've been searching for high-quality abstract images for my design
-        projects, and I'm thrilled to have found this platform. The variety and
-        depth of creativity are astounding!
+        <strong class="text-lg font-semibold block text-neutral-900 mb-2">Top 5 Living Room Inspirations</strong>
+        <span class="text-base block text-neutral-600 mb-2">Curated vibrants colors for your living, make it pop & calm
+          in the same time.</span>
       </p>
+      <button
+        class="text-base flex gap-2 p-0.5 text-base w-fit rounded-lg text-indigo-700 hover:text-indigo-900 cursor-pointer focus:border-4 focus:border-solid focus:border-indigo-50 disabled:text-neutral-300 disabled:opacity-75 disabled:cursor-not-allowed">
+        Read More <i data-feather="arrow-right"></i>
+      </button>
     </div>
   </article>
+
+
+
+  <!-- Interior
+      Top 5 Living Room Inspirations
+      Curated vibrants colors for your living, make it pop & calm in the same time.
+      Read more -->
 
   <!-- Attribute this challenge to yourself! -->
   <div class="credits">
@@ -49,6 +58,10 @@
     <a href="https://www.greatfrontend.com/projects?ref=challenges" target="_blank">GreatFrontEnd Projects</a>. Built by
     <a href="https://www.greatfrontend.com/u/aniketsharma24" target="_blank">Aniket Sharma</a>.
   </div>
+
+  <script>
+    feather.replace();
+  </script>
 </body>
 
 </html>
