@@ -16,8 +16,9 @@
       If you're not using Tailwind, you may delete the <script> -->
   <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!--For icon-->
-  <script src="https://unpkg.com/feather-icons"></script>
+  <!--For Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
 
   <link rel="icon" href="img/favicon.ico" sizes="any" />
   <style>
@@ -27,22 +28,24 @@
 
 <body class="min-h-screen bg-gradient-to-b from-gray-50 to-gray-300 px-4">
   <!-- Add your site or application content here -->
-
-  <article class="mx-auto mt-[120px] w-[320px] shadow-md bg-white rounded-lg overflow-hidden">
-    <img src="./img/spacejoy-YqFz7UMm8qE-unsplash.jpg" alt="Picture of blog card" srcset="">
-    <div class="py-6 px-4 flex gap-3 flex-col">
-      <span
-        class="rounded-full text-base w-fit border-2 px-3 py-0.5 border-solid border-green-200 bg-green-50 text-green-700">Interior</span>
-      <p>
-        <strong class="text-lg font-semibold block text-neutral-900 mb-2">Top 5 Living Room Inspirations</strong>
-        <span class="text-base block text-neutral-600 mb-2">
-          Curated vibrants colors for your living, make it pop & calm in the same time.
-        </span>
-      </p>
-      <button
-        class="text-base flex gap-2 p-0.5 text-base w-fit rounded-lg text-indigo-700 hover:text-indigo-900 cursor-pointer focus:border-4 focus:border-solid focus:border-indigo-50 disabled:text-neutral-300 disabled:opacity-75 disabled:cursor-not-allowed">
-        Read More <i data-feather="arrow-right"></i>
-      </button>
+  <article
+    class="py-6 px-4 flex flex-col items-center gap-7 mx-auto mt-[200px] w-[340px] shadow-sm bg-white rounded-md">
+    <img class="w-20" src="./img/profile.png" alt="Profile picture of Sarah">
+    <div class="flex flex-col items-center">
+      <strong class="font-medium text-lg text-neutral-900">Sarah Dole</strong>
+      <span class="font-normal text-xs text-neutral-600">Front End Engineer @ Microsoft</span>
+    </div>
+    <p class="text-sm font-normal text-neutral-600 text-center">
+      I turn coffee into bugs which are fixed by someone else. Certified Stack Overflow and ChatGPT developer.
+    </p>
+    <button class="bg-indigo-600 text-white w-full p-2 rounded-md font-normal text-sm">
+      Contact me
+    </button>
+    <div class="flex gap-8 text-indigo-600">
+      <i class='bx bxl-github'></i>
+      <i class='bx bxl-linkedin-square'></i>
+      <i class='bx bxl-instagram-alt'></i>
+      <i class='bx bxl-twitter'></i>
     </div>
   </article>
 
@@ -52,10 +55,7 @@
     <a href="https://www.greatfrontend.com/projects?ref=challenges" target="_blank">GreatFrontEnd Projects</a>. Built by
     <a href="https://www.greatfrontend.com/u/aniketsharma24" target="_blank">Aniket Sharma</a>.
   </div>
-
-  <script>
-    feather.replace();
-  </script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
